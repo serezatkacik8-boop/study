@@ -8,23 +8,43 @@
     h1{
       color: red;
     }
-    a{
-      color: blue;
-    }
-    body{
-      background: lightgray;
-    }
     p{
       color: darkgreen;
     }
     button {
-      background: blue;
+      background: green;
       color: white;
-      padding: 10px;
+      padding: 10px 20px;
       border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 8px;
     }
     button:hover {
-      background: darkblue;
+      background: darkgreen;
+    }
+    div{
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    body{
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      background: lightgray;
+    }
+    a{
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+    .img{
+      text-align: center;
     }
   </style>
 </head>
@@ -35,7 +55,7 @@
     <p>Мне это нравится</p>
     <button>Начать</button>
   </div>
-  <div>
+  <div class="img">
     <img src="https://via.placeholder.com/200" alt="Картинка" width="200">
   </div>
   <div>
