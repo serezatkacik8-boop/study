@@ -8,9 +8,6 @@
     h1{
       color: red;
     }
-    p{
-      color: darkgreen;
-    }
     button {
       background: green;
       color: white;
@@ -22,13 +19,6 @@
     }
     button:hover {
       background: darkgreen;
-    }
-    div{
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     body{
       max-width: 700px;
@@ -46,20 +36,85 @@
     .img{
       text-align: center;
     }
+    .skills{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .skills p{
+      background: salmon;
+      padding: 10px;
+      border-radius: 5px;
+      color: black;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      background: wheat;
+    }
+    .menu{
+      display: flex;
+      gap: 15px;
+      margin: 10px;
+  
+      
+    }
+    .menu a:hover{
+      color: darkblue;
+    }
+    .hero{
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .card{
+      text-align: center;
+      font-size: 18px;
+
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
-  <div>
+  <div class="header">
+    <h2>LOGO</h2>
+
+    <div class="menu">
+      <a href="#">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+    </div>
+  </div>
+  <div class="hero card">
+      <h1>Добро пожаловать на мой сайт</h1>
+      <p>Здесь вы найдете много интересного</p>
+
+      <button>Связаться</button>
+    </div>
+  <div class="card">
     <h1>Мой первый сайт</h1>
     <p>Я учусь frontend</p>
     <p>Мне это нравится</p>
     <button>Начать</button>
   </div>
-  <div class="img">
+  <div class="img card">
     <img src="https://via.placeholder.com/200" alt="Картинка" width="200">
   </div>
-  <div>
+  <div class="card">
     <a href="https://youtube.com" target="_blank">Мой YouTube</a>
+  </div>
+  <div class="skills card">
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>JavaScript</p>
   </div>
 </body>
 </html>
